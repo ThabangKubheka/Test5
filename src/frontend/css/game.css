@@ -1,0 +1,88 @@
+
+/* game board */
+table {
+  background-color: #b1ab90;
+  justify-self: center;
+  margin-top: 35px;
+  table-layout: fixed;
+}
+
+table.board {
+  width: 800px;
+}
+
+tr {
+  height: 55px;
+}
+
+td {
+  border: 1px solid #524330;
+  font-weight: bold;
+  vertical-align: top;
+  width: 48px;
+}
+
+td.player-one {
+  background-color: #ff00002d;
+}
+
+td.player-two {
+  background-color: #0400ff2d;
+}
+
+td.selected {
+  background-color: #ffd90081;
+}
+
+td.inactive {
+  background-color: #b1ab90;
+}
+
+td.placing {
+  background-color: #00ff0079;
+}
+
+td.board-cell.double-letter {
+  border: 2px solid #C1EEFF;
+}
+
+td.board-cell.triple-letter {
+  border: 2px solid #A0FFB7;
+}
+
+td.board-cell.double-word {
+  border: 2px solid #FFBCC1;
+}
+
+td.board-cell.triple-word {
+  border: 2px solid #FFC474;
+}
+
+/* tile labels */
+p.type-label {
+  font-size: 10px;
+  margin: 0px 0px -12px;
+  color: #524330;
+  user-select: none;
+  text-align: end;
+}
+
+p.tile-label {
+  font-size: 20px;
+  margin: 15px 0px 0px;
+
+  user-select: none;
+  text-align: center;
+}
+
+p.tile-label.player-one {
+  color: #e44f4f;
+}
+
+p.tile-label.player-two {
+  color: #5579db;
+}
+
+p.tile-label.placing {
+  display: none;
+}
